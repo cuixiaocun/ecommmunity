@@ -615,7 +615,7 @@
 		EA86600F1DFE887C00931414 /* OrderMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMTableViewCell.h; sourceTree = "<group>"; };
 		EA8660101DFE887C00931414 /* OrderMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMTableViewCell.m; sourceTree = "<group>"; };
 		EA9173041E26138800C68705 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EA9862CF1DF64CA0002050E3 /* WisdomCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9862CF1DF64CA0002050E3 /* ecommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9862D31DF64CA0002050E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA9862D51DF64CA0002050E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA9862D61DF64CA0002050E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -624,10 +624,10 @@
 		EA9862DC1DF64CA0002050E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA9862DE1DF64CA0002050E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9862E11DF64CA0002050E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EA9862E81DF64CA0002050E3 /* WisdomCommunityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomCommunityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9862E81DF64CA0002050E3 /* ecommunityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ecommunityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9862EC1DF64CA0002050E3 /* WisdomCommunityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WisdomCommunityTests.m; sourceTree = "<group>"; };
 		EA9862EE1DF64CA0002050E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA9862F31DF64CA0002050E3 /* WisdomCommunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomCommunityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9862F31DF64CA0002050E3 /* ecommunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ecommunityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9862F71DF64CA0002050E3 /* WisdomCommunityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WisdomCommunityUITests.m; sourceTree = "<group>"; };
 		EA9862F91DF64CA0002050E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA98631B1DF65EEB002050E3 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -1323,9 +1323,9 @@
 		EA9862D01DF64CA0002050E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA9862CF1DF64CA0002050E3 /* WisdomCommunity.app */,
-				EA9862E81DF64CA0002050E3 /* WisdomCommunityTests.xctest */,
-				EA9862F31DF64CA0002050E3 /* WisdomCommunityUITests.xctest */,
+				EA9862CF1DF64CA0002050E3 /* ecommunity.app */,
+				EA9862E81DF64CA0002050E3 /* ecommunityTests.xctest */,
+				EA9862F31DF64CA0002050E3 /* ecommunityUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1923,9 +1923,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA9862CE1DF64C9F002050E3 /* WisdomCommunity */ = {
+		EA9862CE1DF64C9F002050E3 /* ecommunity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA9862FC1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "WisdomCommunity" */;
+			buildConfigurationList = EA9862FC1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "ecommunity" */;
 			buildPhases = (
 				29DF10C2015FB00F4DD5A226 /* [CP] Check Pods Manifest.lock */,
 				EA9862CB1DF64C9F002050E3 /* Sources */,
@@ -1938,14 +1938,14 @@
 			);
 			dependencies = (
 			);
-			name = WisdomCommunity;
+			name = ecommunity;
 			productName = WisdomCommunity;
-			productReference = EA9862CF1DF64CA0002050E3 /* WisdomCommunity.app */;
+			productReference = EA9862CF1DF64CA0002050E3 /* ecommunity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA9862E71DF64CA0002050E3 /* WisdomCommunityTests */ = {
+		EA9862E71DF64CA0002050E3 /* ecommunityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA9862FF1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "WisdomCommunityTests" */;
+			buildConfigurationList = EA9862FF1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "ecommunityTests" */;
 			buildPhases = (
 				EA9862E41DF64CA0002050E3 /* Sources */,
 				EA9862E51DF64CA0002050E3 /* Frameworks */,
@@ -1956,14 +1956,14 @@
 			dependencies = (
 				EA9862EA1DF64CA0002050E3 /* PBXTargetDependency */,
 			);
-			name = WisdomCommunityTests;
+			name = ecommunityTests;
 			productName = WisdomCommunityTests;
-			productReference = EA9862E81DF64CA0002050E3 /* WisdomCommunityTests.xctest */;
+			productReference = EA9862E81DF64CA0002050E3 /* ecommunityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EA9862F21DF64CA0002050E3 /* WisdomCommunityUITests */ = {
+		EA9862F21DF64CA0002050E3 /* ecommunityUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA9863021DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "WisdomCommunityUITests" */;
+			buildConfigurationList = EA9863021DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "ecommunityUITests" */;
 			buildPhases = (
 				EA9862EF1DF64CA0002050E3 /* Sources */,
 				EA9862F01DF64CA0002050E3 /* Frameworks */,
@@ -1974,9 +1974,9 @@
 			dependencies = (
 				EA9862F51DF64CA0002050E3 /* PBXTargetDependency */,
 			);
-			name = WisdomCommunityUITests;
+			name = ecommunityUITests;
 			productName = WisdomCommunityUITests;
-			productReference = EA9862F31DF64CA0002050E3 /* WisdomCommunityUITests.xctest */;
+			productReference = EA9862F31DF64CA0002050E3 /* ecommunityUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -1991,7 +1991,7 @@
 					EA9862CE1DF64C9F002050E3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = E9NKWLKTG4;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2013,7 +2013,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA9862CA1DF64C9F002050E3 /* Build configuration list for PBXProject "WisdomCommunity" */;
+			buildConfigurationList = EA9862CA1DF64C9F002050E3 /* Build configuration list for PBXProject "ecommunity" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -2026,9 +2026,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA9862CE1DF64C9F002050E3 /* WisdomCommunity */,
-				EA9862E71DF64CA0002050E3 /* WisdomCommunityTests */,
-				EA9862F21DF64CA0002050E3 /* WisdomCommunityUITests */,
+				EA9862CE1DF64C9F002050E3 /* ecommunity */,
+				EA9862E71DF64CA0002050E3 /* ecommunityTests */,
+				EA9862F21DF64CA0002050E3 /* ecommunityUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2352,12 +2352,12 @@
 /* Begin PBXTargetDependency section */
 		EA9862EA1DF64CA0002050E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA9862CE1DF64C9F002050E3 /* WisdomCommunity */;
+			target = EA9862CE1DF64C9F002050E3 /* ecommunity */;
 			targetProxy = EA9862E91DF64CA0002050E3 /* PBXContainerItemProxy */;
 		};
 		EA9862F51DF64CA0002050E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA9862CE1DF64C9F002050E3 /* WisdomCommunity */;
+			target = EA9862CE1DF64C9F002050E3 /* ecommunity */;
 			targetProxy = EA9862F41DF64CA0002050E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2481,7 +2481,8 @@
 				CODE_SIGN_ENTITLEMENTS = WisdomCommunity/WisdomCommunity.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Guang Liang Jiang (JT2P2BV96J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E9NKWLKTG4;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2502,10 +2503,10 @@
 					"$(PROJECT_DIR)/WisdomCommunity/ping++/lib/One",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qtianxia.shequ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qtianxia.eCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "60897587-8552-45e7-af27-e32afafb46d9";
+				PROVISIONING_PROFILE_SPECIFIER = eCommunityDevelopment;
 				SDKROOT = iphoneos10.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2520,7 +2521,8 @@
 				CODE_SIGN_ENTITLEMENTS = WisdomCommunity/WisdomCommunity.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Guang Liang Jiang (JT2P2BV96J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E9NKWLKTG4;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2541,10 +2543,10 @@
 					"$(PROJECT_DIR)/WisdomCommunity/ping++/lib/One",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qtianxia.shequ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qtianxia.eCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "60897587-8552-45e7-af27-e32afafb46d9";
+				PROVISIONING_PROFILE_SPECIFIER = eCommunityDevelopment;
 				SDKROOT = iphoneos10.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2558,7 +2560,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bridgeontheworld.WisdomCommunityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisdomCommunity.app/WisdomCommunity";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ecommunity.app/ecommunity";
 			};
 			name = Debug;
 		};
@@ -2570,7 +2572,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bridgeontheworld.WisdomCommunityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisdomCommunity.app/WisdomCommunity";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ecommunity.app/ecommunity";
 			};
 			name = Release;
 		};
@@ -2599,7 +2601,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA9862CA1DF64C9F002050E3 /* Build configuration list for PBXProject "WisdomCommunity" */ = {
+		EA9862CA1DF64C9F002050E3 /* Build configuration list for PBXProject "ecommunity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA9862FA1DF64CA0002050E3 /* Debug */,
@@ -2608,7 +2610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA9862FC1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "WisdomCommunity" */ = {
+		EA9862FC1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "ecommunity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA9862FD1DF64CA0002050E3 /* Debug */,
@@ -2617,7 +2619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA9862FF1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "WisdomCommunityTests" */ = {
+		EA9862FF1DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "ecommunityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA9863001DF64CA0002050E3 /* Debug */,
@@ -2626,7 +2628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA9863021DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "WisdomCommunityUITests" */ = {
+		EA9863021DF64CA0002050E3 /* Build configuration list for PBXNativeTarget "ecommunityUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA9863031DF64CA0002050E3 /* Debug */,
