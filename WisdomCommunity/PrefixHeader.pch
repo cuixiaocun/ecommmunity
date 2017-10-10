@@ -25,8 +25,8 @@
 #define TEXTColor ([UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1])
 #define TextGroColor ([UIColor colorWithRed:100/255.0 green:100/255.0 blue:100/255.0 alpha:1])
 #define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
-#define POSTREQUESTURL  @"http://118.190.138.78:8080/web"
-//http://192.168.1.126:8080/admin/login
+//#define POSTREQUESTURL  @"http://118.190.138.78:8080/web"
+#define POSTREQUESTURL  @"http://47.95.122.99:8080/web"
 //#define POSTREQUESTURL  @" "//数据请求跟地址//http://zhihuishequ-api.qwangluo.com:8080
 
 #define PERSONALDATA    @"Personal_data"//登录后的个人数据

@@ -74,7 +74,7 @@
  *
  *  @return MBProgressHUD
  */
-+ (MBProgressHUD *)showMessage:(NSString *)message ToView:(UIView *)view;
+//+ (MBProgressHUD *)showMessage:(NSString *)message ToView:(UIView *)view;
 
 
 /**

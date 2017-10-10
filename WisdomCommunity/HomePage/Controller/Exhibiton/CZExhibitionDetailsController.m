@@ -194,7 +194,7 @@
 }
 - (void)shareTextToPlatformType:(UMSocialPlatformType)platformType
 {
-    UMShareWebpageObject *object = [UMShareWebpageObject shareObjectWithTitle:@"璟智生活" descr:[NSString stringWithFormat:@"%@",self.model.name] thumImage:[UIImage imageNamed:@"icon_1024"]];//
+    UMShareWebpageObject *object = [UMShareWebpageObject shareObjectWithTitle:@"云末社区" descr:[NSString stringWithFormat:@"%@",self.model.name] thumImage:[UIImage imageNamed:@"icon_1024"]];//
     object.webpageUrl = [NSString stringWithFormat:@"%@/api/exhibition/shareExhibition?=%@",POSTREQUESTURL,self.model.modelID];
     NSLog(@"object.webpageUrl= %@,self.model.name = %@",object.webpageUrl,self.model.name);
     //创建分享消息对象

@@ -42,7 +42,7 @@
                                @"timeString":@"03-18 12:32:09",
                                @"showImageString":@"论坛图片_01",
                                @"comNameString":@"Vicky",
-                               @"titleString":@"瀧璟第二届社区邻里节"
+                               @"titleString":@"云末社区第二届社区邻里节"
                                };
         NSMutableDictionary *dict2 = [[NSMutableDictionary alloc] initWithDictionary:dict];
         MyThumbUpModel *model = [MyThumbUpModel bodyWithDict:dict2];

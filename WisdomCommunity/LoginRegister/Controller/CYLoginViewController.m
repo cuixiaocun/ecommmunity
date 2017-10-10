@@ -67,7 +67,7 @@
     _accountTextField = [[UITextField alloc] init];
 //    _accountTextField.placeholder = @"请输入手机号";
     _accountTextField.delegate = self;
-    _accountTextField.keyboardType =UIKeyboardTypeNumberPad;
+//    _accountTextField.keyboardType =UIKeyboardTypeNumberPad;
     _accountTextField.textColor = [UIColor whiteColor];
     _accountTextField.backgroundColor = [UIColor clearColor];
     _accountTextField.textAlignment = NSTextAlignmentLeft;
@@ -240,11 +240,11 @@
         [MBProgressHUD showError:@"信息不完整" ToView:self.view];
         return;
     }
-    if (![CYWhetherPhone isValidPhone:self.accountTextField.text])
-    {
-        [MBProgressHUD showError:@"手机号格式不正确" ToView:self.view];
-        return;
-    }
+//    if (![CYWhetherPhone isValidPhone:self.accountTextField.text])
+//    {
+//        [MBProgressHUD showError:@"手机号格式不正确" ToView:self.view];
+//        return;
+//    }
     //放弃第一响应身份
     [_pwdTextField resignFirstResponder];
     [_accountTextField resignFirstResponder];

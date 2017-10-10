@@ -417,7 +417,7 @@
             self.agreementPPCButton.selected = YES;
             //协议
             UIButton *agreementButton = [[UIButton alloc] init];
-            [agreementButton setTitle:@"同意《瀧璟智慧社区使用条款与隐私规则》" forState:UIControlStateNormal];
+            [agreementButton setTitle:@"同意《云末社区使用条款与隐私规则》" forState:UIControlStateNormal];
             agreementButton.titleLabel.font = [UIFont fontWithName:@"Arial" size:12];
             agreementButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;//居左
             [agreementButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];

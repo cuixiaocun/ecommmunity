@@ -46,20 +46,7 @@
     //切换数据
     NSDictionary *getDict = [NSDictionary dictionaryWithDictionary:[CYSmallTools getDataKey:COMDATA]];
     [self.communityButton setTitle:[NSString stringWithFormat:@"%@ %@",[getDict objectForKey:@"city"],[getDict objectForKey:@"comName"]] forState:UIControlStateNormal];
-    //
-//    //签到
-//    if ([[CYSmallTools getDataStringKey:WHETHERSIGNIN] integerValue] == 1)//未签到
-//    {
-//        self.signInBtn.selected = NO;
-//    }
-//    else
-//    {
-//        self.whetherSignIn = YES;//说明已签到
-//        if (self.signInBtn.selected == NO)
-//        {
-//            self.signInBtn.selected = YES;
-//        }
-//    }
+
     //查看帖子更改
     if (self.ClickRootCellData.count == 2)
     {
@@ -72,8 +59,6 @@
 - (void) setRootCStyle
 {
     
-//    self.navigationItem.titleView = _bar;
-//    self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"首页";
     [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
     NSDictionary *getDict = [NSDictionary dictionaryWithDictionary:[CYSmallTools getDataKey:COMDATA]];
@@ -172,7 +157,6 @@
 {
     if (section==4||section==0) {
         return 0;
-
     }else if(section==3)
     {
         return 1;
@@ -188,7 +172,7 @@
     }
     else if (indexPath.section == 1)
     {
-        return CXCWidth*230;
+        return CXCWidth*430;
     }
     else if (indexPath.section == 2)
     {
@@ -391,7 +375,7 @@
         {
             if (self.ctView == nil)
             {
-                self.ctView = [[RootMiddleView alloc] initWithFrame:CGRectMake(0, 0, CYScreanW, 230*CXCWidth)];
+                self.ctView = [[RootMiddleView alloc] initWithFrame:CGRectMake(0, 0, CYScreanW, 430*CXCWidth)];
                 self.ctView.delegate = self;
                 self.ctView.backgroundColor = [UIColor clearColor];
                 [cell.contentView addSubview:self.ctView];

@@ -31,46 +31,46 @@
 }
 
 #pragma mark 显示一些信息
-+ (MBProgressHUD *)showMessage:(NSString *)message ToView:(UIView *)view {
-    if (view == nil) view = (UIView*)[UIApplication sharedApplication].delegate.window;
-    
-    //动态图
-    UIImageView *gitImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"an_001"]];
-    gitImgView.animationImages = [NSArray arrayWithArray:[CYSmallTools getArrData:LOADANIMATION]];;//将序列帧数组赋给UIImageView的animationImages属性
-    gitImgView.animationDuration = 0.5;//设置动画时间
-    gitImgView.animationRepeatCount = 0;//设置动画次数 0 表示无限
-    [gitImgView startAnimating];//开始播放动画
-    UIView *customerView = [[UIView alloc]initWithFrame:CGRectMake(CYScreanW * 0.4, CYScreanH * 0.5, gitImgView.frame.size.width, gitImgView.frame.size.width)];
-    [customerView addSubview:gitImgView];
-    // 快速显示一个提示信息
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.mode=MBProgressHUDModeCustomView;
-    hud.customView = customerView;
-//    hud.labelText=message;
-//    hud.labelFont=[UIFont fontWithName:@"Heiti SC" size:15];
-    // 隐藏时候从父控件中移除
-    hud.removeFromSuperViewOnHide = YES;
-    //代表需要蒙版效果
-    hud.dimBackground = NO;
-    //hud.labelColor = [UIColor grayColor];
-    //任务进行中
-    hud.taskInProgress = YES;
-    [hud show:YES];
-    //自定义显示的view
-    hud.customView = customerView;
-    //透明度
-    hud.opacity = 0.0;
-    //设置HUD和customerView的边距（默认是20）
-    hud.margin = 10.0f;
-    hud.yOffset = -20.0f;
-    
-    
-    return hud;
-}
+//+ (MBProgressHUD *)showMessage:(NSString *)message ToView:(UIView *)view {
+//    if (view == nil) view = (UIView*)[UIApplication sharedApplication].delegate.window;
+//    
+//    //动态图
+//    UIImageView *gitImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"an_001"]];
+//    gitImgView.animationImages = [NSArray arrayWithArray:[CYSmallTools getArrData:LOADANIMATION]];;//将序列帧数组赋给UIImageView的animationImages属性
+//    gitImgView.animationDuration = 0.5;//设置动画时间
+//    gitImgView.animationRepeatCount = 0;//设置动画次数 0 表示无限
+//    [gitImgView startAnimating];//开始播放动画
+//    UIView *customerView = [[UIView alloc]initWithFrame:CGRectMake(CYScreanW * 0.4, CYScreanH * 0.5, gitImgView.frame.size.width, gitImgView.frame.size.width)];
+//    [customerView addSubview:gitImgView];
+//    // 快速显示一个提示信息
+//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+//    hud.mode=MBProgressHUDModeCustomView;
+//    hud.customView = customerView;
+////    hud.labelText=message;
+////    hud.labelFont=[UIFont fontWithName:@"Heiti SC" size:15];
+//    // 隐藏时候从父控件中移除
+//    hud.removeFromSuperViewOnHide = YES;
+//    //代表需要蒙版效果
+//    hud.dimBackground = NO;
+//    //hud.labelColor = [UIColor grayColor];
+//    //任务进行中
+//    hud.taskInProgress = YES;
+//    [hud show:YES];
+//    //自定义显示的view
+//    hud.customView = customerView;
+//    //透明度
+//    hud.opacity = 0.0;
+//    //设置HUD和customerView的边距（默认是20）
+//    hud.margin = 10.0f;
+//    hud.yOffset = -20.0f;
+//    
+//    
+//    return hud;
+//}
 
 //加载视图
 +(void)showLoadToView:(UIView *)view{
-    [self showMessage:@"加载中..." ToView:view];
+//    [self showMessage:@"加载中..." ToView:view];
 }
 
 
@@ -134,8 +134,10 @@
     if (view == nil) view = (UIView*)[UIApplication sharedApplication].delegate.window;
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.labelText=title;
-    hud.labelFont=[UIFont fontWithName:@"Heiti SC" size:15];
+//    hud.labelText=title;
+    hud.detailsLabelText = title;
+
+    hud.detailsLabelFont=[UIFont fontWithName:@"Heiti SC" size:15];
     // 设置图片
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:iconName]];
     

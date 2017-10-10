@@ -546,7 +546,7 @@
 }
 - (void)shareTextToPlatformType:(UMSocialPlatformType)platformType
 {
-    UMShareWebpageObject *object = [UMShareWebpageObject shareObjectWithTitle:@"璟智生活" descr:[NSString stringWithFormat:@"%@",self.headModel.title] thumImage:[UIImage imageNamed:@"icon_1024"]];//
+    UMShareWebpageObject *object = [UMShareWebpageObject shareObjectWithTitle:@"云末社区" descr:[NSString stringWithFormat:@"%@",self.headModel.title] thumImage:[UIImage imageNamed:@"icon_1024"]];//
     NSString *url = [NSString stringWithFormat:@"%@/api/activity/shareActivity?=%@",POSTREQUESTURL,self.ActivityIDmodel];
     object.webpageUrl = url;
     NSLog(@"url = %@",url);

@@ -78,6 +78,7 @@
         [CYSmallTools saveDataString:@"0" withKey:@"WetherFirstInput"];//是否第一次进入
         
         NSString *string = [NSString stringWithFormat:@"%@",[CYSmallTools getDataKey:COMDATA]];
+        NSLog(@"%@",string);
         if (string.length > 6)//绑定的小区数据
         {
             NSString *string = [NSString stringWithFormat:@"%@",[CYSmallTools getDataKey:@"hello"]];

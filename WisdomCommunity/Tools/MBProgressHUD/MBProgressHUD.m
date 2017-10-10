@@ -172,6 +172,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		self.detailsLabelText = nil;
 		self.opacity = 0.8f;
 		self.color = nil;
+
 		self.labelFont = [UIFont boldSystemFontOfSize:kLabelFontSize];
 		self.labelColor = [UIColor whiteColor];
 		self.detailsLabelFont = [UIFont boldSystemFontOfSize:kDetailsLabelFontSize];
@@ -687,27 +688,27 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 }
 
 - (void)updateUIForKeypath:(NSString *)keyPath {
-//	if ([keyPath isEqualToString:@"mode"] || [keyPath isEqualToString:@"customView"] ||
-//		[keyPath isEqualToString:@"activityIndicatorColor"]) {
-//		[self updateIndicators];
-//	} else if ([keyPath isEqualToString:@"labelText"]) {
-//		label.text = self.labelText;
-//	} else if ([keyPath isEqualToString:@"labelFont"]) {
-//		label.font = self.labelFont;
-//	} else if ([keyPath isEqualToString:@"labelColor"]) {
-//		label.textColor = self.labelColor;
-//	} else if ([keyPath isEqualToString:@"detailsLabelText"]) {
-//		detailsLabel.text = self.detailsLabelText;
-//	} else if ([keyPath isEqualToString:@"detailsLabelFont"]) {
-//		detailsLabel.font = self.detailsLabelFont;
-//	} else if ([keyPath isEqualToString:@"detailsLabelColor"]) {
-//		detailsLabel.textColor = self.detailsLabelColor;
-//	} else if ([keyPath isEqualToString:@"progress"]) {
-//		if ([indicator respondsToSelector:@selector(setProgress:)]) {
-//			[(id)indicator setValue:@(progress) forKey:@"progress"];
-//		}
-//		return;
-//	}
+	if ([keyPath isEqualToString:@"mode"] || [keyPath isEqualToString:@"customView"] ||
+		[keyPath isEqualToString:@"activityIndicatorColor"]) {
+		[self updateIndicators];
+	} else if ([keyPath isEqualToString:@"labelText"]) {
+		label.text = self.labelText;
+	} else if ([keyPath isEqualToString:@"labelFont"]) {
+		label.font = self.labelFont;
+	} else if ([keyPath isEqualToString:@"labelColor"]) {
+		label.textColor = self.labelColor;
+	} else if ([keyPath isEqualToString:@"detailsLabelText"]) {
+		detailsLabel.text = self.detailsLabelText;
+	} else if ([keyPath isEqualToString:@"detailsLabelFont"]) {
+		detailsLabel.font = self.detailsLabelFont;
+	} else if ([keyPath isEqualToString:@"detailsLabelColor"]) {
+		detailsLabel.textColor = self.detailsLabelColor;
+	} else if ([keyPath isEqualToString:@"progress"]) {
+		if ([indicator respondsToSelector:@selector(setProgress:)]) {
+			[(id)indicator setValue:@(progress) forKey:@"progress"];
+		}
+		return;
+	}
 	[self setNeedsLayout];
 	[self setNeedsDisplay];
 }
