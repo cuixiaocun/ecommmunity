@@ -1,0 +1,61 @@
+//
+//  PrefixHeader.pch
+//  WisdomCommunity
+//
+//  Created by bridge on 16/12/6.
+//  Copyright © 2016年 bridge. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "Header.h"//头文件
+#import "UIViewExt.h"
+#import "ProgressHUD.h"
+#import "EGOImageView.h"
+//宏定义
+#define CYScreanW  [UIScreen mainScreen].bounds.size.width/1.0
+#define CXCWidth   [UIScreen mainScreen].bounds.size.width/750.0
+
+//#define CYScreanH [UIScreen mainScreen].bounds.size.height
+#define CYScreanH  [UIScreen mainScreen].bounds.size.width/0.563
+#define CXCScreanH   [UIScreen mainScreen].bounds.size.height/1.0
+#define BGColor ([UIColor colorWithRed:241/255.0 green:242/255.0 blue:243/255.0 alpha:1])
+#define TEXTColor ([UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1])
+#define TextGroColor ([UIColor colorWithRed:100/255.0 green:100/255.0 blue:100/255.0 alpha:1])
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
+#define POSTREQUESTURL  @"http://118.190.138.78:8080/web"
+//http://192.168.1.126:8080/admin/login
+//#define POSTREQUESTURL  @" "//数据请求跟地址//http://zhihuishequ-api.qwangluo.com:8080
+
+#define PERSONALDATA    @"Personal_data"//登录后的个人数据
+#define ACCOUNTDATA     @"Account_data_C" //修改个人账号数据返回，数据格式与PERSONALDATA不一致
+#define TOKEN           @"Token_Data"//token
+#define ACCOUNT         @"Login_Accout"//账号
+#define WHETHERSIGNIN   @"Whether_Sign_In"//是否已签到
+#define CURRENTINTEGRAL @"TheCurrentIntegral"//当前积分
+#define COMDATA         @"Now_Com_Data"//当前小区数据
+#define PROPERTYCPHONE  @"PropertyComplaintsPhone"//物业投诉电话
+#define LOADANIMATION   @"Loading_Animation"//加载动画
+#define BackGroundImage @"http://7xwtb9.com2.z0.glb.qiniucdn.com/home_activity.png"//底层图片
+#define DefaultHeadImage     @"http://7xwtb9.com2.z0.glb.qiniucdn.com/head-01@2x.png"//默认头像
+
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)?YES:NO)
+#define iPhone4s [UIScreen mainScreen].bounds.size.height == 480)?YES:NO
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+//放大版的iphone6等于Iphone5的分辨率 《求区别办法》
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define TheMass_toneAttune [UIColor colorWithRed:0.2980 green:0.5608 blue:0.8863 alpha:1]
+#define NavColor [UIColor colorWithRed:0.2980 green:0.5608 blue:0.8863 alpha:1]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

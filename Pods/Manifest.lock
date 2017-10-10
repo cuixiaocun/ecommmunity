@@ -1,0 +1,51 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - Masonry (0.6.4)
+  - MJRefresh (3.1.12)
+  - PKYStepper (0.0.1)
+  - UMengUShare/Core (6.3.0):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.3.0)
+  - UMengUShare/Social/QQ (6.3.0):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.3.0):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.3.0):
+    - UMengUShare/Core
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0.0-beta.1)
+  - Masonry (~> 0.6.4)
+  - MJRefresh
+  - PKYStepper (= 0.0.1)
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
+  - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PKYStepper: 8dacefbddf9fa2b6aaec2ef828b46a78daa2db7d
+  UMengUShare: b208ac3bcf1f63d11a100b359990e9d77a0f2085
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 3f811c84ab9148d629245f06e571f3da7b78b44d
+
+COCOAPODS: 1.2.0
